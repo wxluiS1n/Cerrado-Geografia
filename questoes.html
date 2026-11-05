@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questões CERRADO - Domínio Morfoclimático</title>
+    <!-- Alterações do Pref -->
+    <link rel="icon" href="img/C.png">
+    <!-- Alterações do Pref -->
+
+    <style>
+
+        /*Alterações do pref*/
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing:border-box;
+                overflow-x: hidden;
+                background-color: #1c1c1c;
+            }
+
+            @font-face {
+                font-family: 'centaur';
+                src:
+                url('centaur.ttf') format('OpenType');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .rodape {
+                background-image: linear-gradient( 180deg, #3c3c3c, #1c1c1c);
+                display: flex;
+                justify-content: center;
+                width: 100vw;
+                min-height: 22vw;
+                max-height: max-content;
+            }
+
+            .rodape-div {
+                background-color: #00000000;
+                min-height: 22vw;
+                max-height: max-content;
+                width: 85%;
+                display: flex;
+                gap: 2vw;
+            }
+
+            .rodape-divsoes {
+                background-color: #00000000;
+                min-height: 22vw;
+                max-height: max-content;
+                width: 31%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .rodape-divsoes2 {
+                background-color: #00000000;
+                min-height: 22vw;
+                max-height: max-content;
+                width: 17%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .rodape-divsoes2-5 {
+                background-color: #00000000;
+                height: 40%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                border-right: 1.5px solid #474747;
+            }
+
+            .t-rod {
+                font-family: centaur;
+                font-weight: bolder;
+                color: #6e6e6e;
+                font-size: 4vw;
+                margin-top: -2vw;
+                -webkit-text-stroke: 0.1vw #6e6e6e;
+            }
+
+            .p-rod {
+                font-family: centaur;
+                font-weight: bold;
+                color: #6e6e6e;
+                font-size: 1.5vw;
+                margin-top: 5vw;
+            }
+
+            .pt-rod {
+                font-family: centaur;
+                font-weight: bold;
+                color: #6e6e6e;
+                font-size: 1.5vw;
+                margin-top: -0vw;
+            }
+
+            .pt-rod2 {
+                font-family: centaur;
+                font-weight: bold;
+                color: #5c5c5c;
+                font-size: 1.2vw;
+                margin-top: -0vw;
+            }
+
+            .ls1n {
+                height: 5vw;
+                width: 5vw;
+                margin-left: 9.5vw
+            }
+
+            .verificar-respostas {
+                margin-top: 4vw;
+            }
+
+            .navbar {
+                background-color: #3c3c3c7c;
+                width: 100%;
+                height: 7vh;
+                display: flex;
+                justify-content: center;
+                border-bottom: 2px solid #b1b2b370;
+                position: fixed;
+                /*thx camille */
+                backdrop-filter: blur(2.5px);
+                -webkit-backdrop-filter: blur(2.5px);
+                z-index: 999;
+            }
+
+            .navbar2 {
+                background-color:#00000000;
+                width: 85%;
+                height: 7vh;
+                display: flex;
+                gap: .5vw;
+                justify-content: space-between;
+            }
+
+            .conjunto-navdiv {
+                display: flex;
+                justify-content: space-between;
+                gap: 1vw;
+            }
+
+            .navdiv {
+                background-color:#00000000;
+                width: 12vw;
+                height: 7vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .navdiv2 {
+                background-color:#00000000;
+                min-width: 10vw;
+                max-width: max-content;
+                height: 7vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .navdiv2-5 {
+                background-color:#00000000;
+                min-width: 4vw;
+                max-width: max-content;
+                height: 7vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .titulo {
+                font-family: centaur;
+                font-size: 2vw;
+                color: #f1f2f3;
+                font-weight: bold;
+                transition: ease 0.2s;
+                -webkit-text-stroke: 0.08vw #f1f2f3;
+            }
+
+            .titulo:hover {
+                transform: scale(1.02);
+            }
+
+            .link {
+                background-color: #3c3c3c7c;
+                outline: 1px solid #b1b2b370;
+                border-radius: 20px;
+                height: 4vh;
+                width: 100%;
+                display: flex;
+                overflow: hidden;
+                transition: ease 0.2s;
+            }
+
+            .link:hover {
+                transform: scale(1.02);
+                background-color: #3c3c3cb2;
+            }
+
+            .link2 {
+                background-color: #3c3c3c7c;
+                outline: 1px solid #b1b2b370;
+                border-radius: 20px;
+                height: 4vh;
+                width: 4vh;
+                display: flex;
+                overflow: hidden;
+                transition: ease 0.2s;
+                margin-left: 3vh
+            }
+
+            .link2:hover {
+                transform: scale(1.02);
+                background-color: #3c3c3cb2;
+            }
+
+            .linkdimg {
+                background-color: #00000000;
+                height: 4vh;
+                width: 5vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .linkdimg2 {
+                background-color: #00000000;
+                height: 4vh;
+                width: 4vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .linkdtext {
+                height: 4vh;
+                width: calc(100% - 5vh);
+                background-color: #00000000;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .linkimg {
+                width: 3vh;
+                height: 3vh;
+                margin-left: 1vh;
+            }
+
+            .linkimg2 {
+                width: 2vh;
+                height: 2vh;
+                margin-left: 1vh;
+            }
+
+            .linkp {
+                font-family: centaur;
+                font-weight: bolder;
+                color: #f1f2f3;
+                font-size: 1vw;
+                line-height: 1;
+            }
+
+        /*Alterações do pref*/
+
+
+    /* Card da pergunta */
+    .question {
+        
+    }
+
+    /* opções */
+        /* Alterações do pref */
+            .p {
+                font-family: centaur;
+                color: #3c3c3c;
+                font-size: 1.3vw;
+                -webkit-text-stroke: 0.03vw #3c3c3c;
+            }
+
+            .verificar-respostas {
+                transform: scale(2);
+            }
+        /* Alterações do pref */
+
+    /* perguntas */
+    .label {
+    font-family: centaur;
+    font-weight: bolder;
+    color: #523a21;
+    font-size: 1vw;
+    }
+
+    /* Classe aplicada nas questões certas */
+    .correto {
+        transition: all 0.5s;
+        background-color: green;
+        width: fit-content;
+
+    }
+
+    /* Classe aplicada nas questões certas */
+    .errado {
+        transition: all 0.5s;
+        background-color: red;
+        width: fit-content;
+
+    }
+
+</style>
+
+</head>
+<body>
+
+    <!-- Alterações do pref -->
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="navbar2">
+            <div class="conjunto-navdiv">
+                <div class="navdiv">
+                    <a href="index.html#inicio" class="titulo" > CERRADO </a>
+                </div>
+                <div class="navdiv2">
+                    <!-- Aspectos Naturais -->
+                    <a href="index.html#an" class="link">
+                        <div class="linkdimg">
+                            <img src="img/AN.png" class="linkimg">
+                        </div>
+                        <div class="linkdtext">
+                            <p class="linkp"> Aspectos Naturais&emsp;</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="navdiv2">
+                    <!-- Situação atual -->
+                    <a href="index.html#sa" class="link">
+                        <div class="linkdimg">
+                            <img src="img/SA.png" class="linkimg">
+                        </div>
+                        <div class="linkdtext">
+                            <p class="linkp"> Situação Atual&emsp;</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="navdiv2">
+                    <!-- Questões vestibular -->
+                    <a href="#inicio" class="link">
+                        <div class="linkdimg">
+                            <img src="img/QV.png" class="linkimg">
+                        </div>
+                        <div class="linkdtext">
+                            <p class="linkp"> Questões de Vestibular&emsp;</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="navdiv2-5">
+                <!-- Botão de Voltar pra cima -->
+                <div class="link2">
+                    <a href="#inicio" class="linkdimg2">
+                        <img src="img/Arrow.png" class="linkimg2">
+                    </a>
+                 </div>
+            </div>    
+        </div>
+    </div>
+    <!-- Alterações do pref -->
+
+    <!-- Alterações do pref -->
+    <a name="inicio"></a>
+    <div style="display:flex; justify-content: center; padding-bottom: 4vw; background-image: linear-gradient( 180deg, #f1f2f3, #d6dade); width: 100vw;">
+    <div style="width: 85%; padding-top: 4vw;">
+    <!-- Alterações do pref -->
+        
+<form>
+    <div class="question">
+    <p class="label"><strong>UFMS 2010</strong></p>
+    <p class="label">O Cerrado, que é o segundo maior Bioma brasileiro, ocupa aproximadamente 2 milhões de hectares e apresenta grande biodiversidade, devido principalmente à influência de outros biomas com os quais mantém contato (Floresta Amazônica, Floresta Atlântica, Caatinga, Matas Secas e Pantanal). Entretanto, o Cerrado vem sofrendo com grandes desmatamentos desde a década de 70, uma vez que não é protegido por lei, e sua área plana fez com que fosse considerado o local ideal para o desenvolvimento de grandes culturas e pastagens. Assim, o Cerrado sempre foi visto como uma fronteira agropastoril, onde, através da correção do solo ácido, tudo se produz.</p>
+    <p class="label">Com relação ao aspecto geral da vegetação do Cerrado, é correto afirmar (selecione mais de uma opção se necessário):</p>
+    <!-- Esses aqui são checkboxs, pode ser mais de uma. As que estão certas tem divs ao redor -->
+    <input type="checkbox" class="p" name="n_q1" id="i_1a" value="false"><label for="i_1a" class="p">Apresenta árvores altas, de tronco retilínio e com casca lisa.</label><br>
+    <div> <input type="checkbox" class="p" name="n_q1" id="i_1b" value="true"><label for="i_1b" class="p">Apresenta árvores baixas, com tronco retorcido e casca grossa como proteção ao fogo.</label><br></div>
+    <input type="checkbox" class="p" name="n_q1" id="i_1c" value="false"><label for="i_1c" class="p">As folhas são grandes e membranáceas, para realizar maior quantidade de fotossíntese.</label><br>
+    <input type="checkbox" class="p" name="n_q1" id="i_1d" value="false"><label for="i_1d" class="p">As raízes são superficiais para facilitar a sua fixação.</label><br>
+    <div> <input type="checkbox" class="p" name="n_q1" id="i_1e" value="true"><label for="i_1e" class="p">As folhas são pequenas e coriáceas, para evitar a transpiração excessiva.</label><br></div>
+    <div> <input type="checkbox" class="p" name="n_q1" id="i_1f" value="true"><label for="i_1f" class="p">As raízes são profundas para facilitar a absorção de água.</label><br></div>
+    </div>
+    
+
+
+    <div class="question">
+    <p class="label"><strong>UDESC 2015/2</strong></p> <!-- fonte -->
+    <p class="label">Assinale a alternativa correta sobre o bioma do Cerrado brasileiro.</p> <!-- pergunta -->
+
+    <!--div ao redor da resposta certa-->                                         <!-- texto da pergunta -->
+    <div> <input type="radio" class="p" name="n_q2" id="i_2a" value="true"><label for="i_2a" class="p">A área nuclear fica no Brasil central, mas também pode ser encontrado em enclaves na floresta amazônica.</label><br></div>
+    
+    <input type="radio" class="p" name="n_q2" id="i_2b" value="false"><label for="i_2b" class="p">Encontra-se hoje fortemente devastado, devido ao cultivo de cana-de-açúcar em toda a sua extensão.</label><br>
+    <input type="radio" class="p" name="n_q2" id="i_2c" value="false"><label for="i_2c" class="p">É uma formação vegetal aberta, devido à presença de grandes manadas de mamíferos.</label><br>
+    <input type="radio" class="p" name="n_q2" id="i_2d" value="false"><label for="i_2d" class="p">O clima neste bioma é chuvoso o ano todo, o que explica o fato de ser zona de nascentes de importantes rios brasileiros.</label><br>
+    <input type="radio" class="p" name="n_q2" id="i_2e" value="false"><label for="i_2e" class="p">A aparência tortuosa de seus arbustos é devido à carência de nutrientes no solo, como o ferro e o alumínio.</label><br>
+    </div>
+    
+
+
+    <div class="question">
+    <p class="label"><strong>Enem 2015</strong></p>
+                     <!-- esse tem um title pq tem uma fonte -->
+    <p class="label" title="VIEIRA, C. Degradação do solo causa perda de fontes de água de famílias de MG. Disponível em: http://g1.globo.com. Acesso em: 1 nov. 2014.">regiões do Brasil passam por uma crise de água por causa da seca. Mas, uma região de Minas Gerais está enfrentando a falta de água no campo tanto em tempo de chuva como na seca. As veredas estão secando no norte e no noroeste mineiro. Ano após ano, elas vêm perdendo a capacidade de ser a caixa-d'água do grande sertão de Minas.</p>
+    <p class="label">As veredas têm um papel fundamental no equilíbrio hidrológico dos cursos de água no ambiente do Cerrado, pois:</p>
+   
+    <input type="radio" class="p" name="n_q3" id="i_3a" value="false"><label for="i_3a" class="p">formam os leques aluviais nas planícies das bacias.</label><br>
+    <input type="radio" class="p" name="n_q3" id="i_3b" value="false"><label for="i_3b" class="p">formam os leques aluviais nas planícies das bacias.</label><br>
+    <input type="radio" class="p" name="n_q3" id="i_3c" value="false"><label for="i_3c" class="p">fornecem sumidouro para as águas de recarga da bacia.</label><br>
+    <input type="radio" class="p" name="n_q3" id="i_3d" value="false"><label for="i_3d" class="p">contribuem para o aprofundamento dos talvegues à jusante.</label><br>
+    <div> <input type="radio" class="p" name="n_q3" id="i_3e" value="true"><label for="i_3e" class="p">constituem um sistema represador da água na chapada.</label><br></div>
+    </div>
+
+
+
+
+        <div class="question">
+    <p class="label"><strong>Enem 2016</strong></p>
+    <p class="label" title="PINTO, P. P.; DINIZ-FILHO, J. A. F. ln: ALMEIDA, M. G. (Org.). Tantos cerrados: múltiplas abordagens sobre a biogeodiversidade e singularidade cultural. Goiânia: Vieira, 2005 (adaptado).">O bioma Cerrado foi considerado recentemente um dos 25 hotspots de biodiversidade do mundo, segundo uma análise em escala mundial das regiões biogeográficas sobre áreas globais prioritárias para conservação. O conceito de hotspot foi criado tendo em vista a escassez de recursos direcionados para conservação, com o objetivo de apresentar os chamados "pontos quentes", ou seja, locais para os quais existe maior necessidade de direcionamento de esforços, buscando evitar a extinção de muitas espécies que estão altamente ameaçadas por ações antrópicas.</p>
+    <p class="label">A necessidade desse tipo de ação na área mencionada tem como causa a:</p>
+
+    <input type="radio" class="p" name="n_q4" id="i_4a" value="false"><label for="i_4a" class="p">intensificação da atividade turística.</label><br>
+    <input type="radio" class="p" name="n_q4" id="i_4b" value="false"><label for="i_4b" class="p">implantação de parques ecológicos.</label><br>
+    <input type="radio" class="p" name="n_q4" id="i_4c" value="false"><label for="i_4c" class="p">exploração dos recursos minerais.</label><br>
+    <input type="radio" class="p" name="n_q4" id="i_4d" value="false"><label for="i_4d" class="p">elevação do extrativismo vegetal.</label><br>
+    <div> <input type="radio" class="p" name="n_q4" id="i_4e" value="true"><label for="i_4e" class="p">expansão da fronteira agrícola.</label><br></div>
+    </div>
+
+
+
+        <div class="question">
+    <p class="label"><strong>PUC-SP 2017/2</strong></p>
+    <p class="label">O Relatório da World Wild Foundation, denominado A soja e o Cerrado: a joia esquecida do Brasil, lançado em 2011, ressalta o considerável aumento mundial do uso da soja e os impactos que essa cultura tem trazido para o ambiente em determinados pontos do planeta. No Brasil, com relação a essa cultura praticada no Cerrado, qual das alternativas abaixo contém apenas afirmações corretas:</p>
+    <p class="label">I- A partir da década de 1970, a extensa área que compõe o Cerrado começou a ser desmatada e preparada para o desenvolvimento da atividade agropecuária. A expansão da fronteira agrícola é uma das principais causas da degradação ambiental nessa área.</p>
+    <p class="label">II- Podem ser citados como impactos ambientais advindos da cultura da soja no cerrado: contaminação por agrotóxicos nas águas, alimentos e animais, erosão e risco à sobrevivência de espécies animais e vegetais em função da perda de habitat.</p>
+    <p class="label">III – O processo de modernização da agricultura no Brasil aconteceu somente no Cerrado, o que mostra que a introdução da monocultura da soja em outros biomas seria uma escolha acertada do ponto de vista econômico e ambiental.</p>
+    
+    <input type="radio" class="p" name="n_q5" id="i_5a" value="false"><label for="i_5a" class="p">Estão corretas as alternativas I e III.</label><br>
+    <input type="radio" class="p" name="n_q5" id="i_5b" value="false"><label for="i_5b" class="p">Estão corretas as alternativas II e III.</label><br>
+    <div> <input type="radio" class="p" name="n_q5" id="i_5c" value="true"><label for="i_5c" class="p">Estão corretas as alternativas I e II.</label><br></div>
+    <input type="radio" class="p" name="n_q5" id="i_5d" value="false"><label for="i_5d" class="p">Estão corretas as alternativas I, II e III.</label><br>
+    </div>
+
+
+
+        <div class="question">
+    <p class="label"><strong>UDESC 2019/1</strong></p>
+    <p class="label">O bioma Cerrado, no Brasil, foi bastante destruído devido às atividades agropastoris. Analise as proposições.</p>
+    <p class="label">I. Os Cerrados têm um aspecto característico, marcado por árvores, geralmente, tortuosas e espaçadas.</p>
+    <p class="label">II. Apesar do aspecto xeromórfico no cerrado, não há escassez de água, mesmo nas estações mais secas. Os cerrados brasileiros, em comparação com as savanas africanas, são úmidos, apesar da sazonalidade da umidade.</p>
+    <p class="label">III. O Cerrado está presente nos estados de Minas Gerias, Mato Grosso, Bahia, Mato Grosso do Sul, Tocantins, Goiás, São Paulo e Paraná.</p>
+    <p class="label">IV. Até os anos 1970 acreditava-se que o solo do cerrado era improdutivo, mas novas tecnologias e novos tratamentos de solo fizeram desta região uma das mais produtivas do Brasil.</p>
+    <p class="label">V. Os incêndios nos cerrados são a principal ameaça, atualmente.</p>
+    <p class="label">Assinale a alternativa correta.</p>
+
+    <input type="radio" class="p" name="n_q6" id="i_6a" value="false"><label for="i_6a" class="p">Somente as afirmativas I, II e III são verdadeiras.</label><br>
+    <input type="radio" class="p" name="n_q6" id="i_6b" value="false"><label for="i_6b" class="p">Somente as afirmativas II, IV e V são verdadeiras.</label><br>
+    <input type="radio" class="p" name="n_q6" id="i_6c" value="false"><label for="i_6c" class="p">Somente as afirmativas III e V são verdadeiras.</label><br>
+    <input type="radio" class="p" name="n_q6" id="i_6d" value="false"><label for="i_6d" class="p">Somente as afirmativas I, II, IV e V são verdadeiras.</label><br>
+    <div> <input type="radio" class="p" name="n_q6" id="i_6e" value="true"><label for="i_6e" class="p">Todas as afirmativas são verdadeiras.</label><br></div>
+    </div>
+
+
+
+        <div class="question">
+    <p class="label"><strong>FUVEST 2021</strong></p>
+    <p class="label">Na transição do Cerrado para a Mata Atlântica, ocorre uma substituição da vegetação, que resulta em mudanças na frequência de certas características das plantas. Identifique duas mudanças decorrentes dessa transição.</p>
+    
+    <input type="radio" class="p" name="n_q7" id="i_7a" value="false"><label for="i_7a" class="p">Aumento da frequência de caules e galhos tortuosos; aumento da frequência de plantas que apresentam folhas largas.</label><br>
+    <input type="radio" class="p" name="n_q7" id="i_7b" value="false"><label for="i_7b" class="p">Aumento da frequência de plantas que germinam e crescem melhor sob a luz direta do sol; diminuição da frequência de plantas que apresentam folhas largas.</label><br>
+    <div> <input type="radio" class="p" name="n_q7" id="i_7c" value="true"><label for="i_7c" class="p">Diminuição da frequência de caules e galhos tortuosos; aumento da frequência de plantas que apresentam folhas largas.</label><br></div>
+    <input type="radio" class="p" name="n_q7" id="i_7d" value="false"><label for="i_7d" class="p">Diminuição da frequência de plantas epífitas; diminuição da frequência de plantas com adaptações a queimadas</label><br>
+    <input type="radio" class="p" name="n_q7" id="i_7e" value="false"><label for="i_7e" class="p">Diminuição da frequência de plantas que germinam e crescem melhor sob a luz direta do sol; aumento da frequência de plantas com adaptações a queimadas.</label><br>
+    </div>
+
+    <!-- Alterações do pref -->
+    <center>
+    <!-- Alterações do pref -->
+
+    <button type="button" class="verificar-respostas" onclick="revelar()">Verificar respostas</button>
+
+    <!-- Alterações do pref -->
+    </center>
+    <!-- Alterações do pref -->
+
+</form>
+
+    <!-- Alterações do pref -->
+    </div>
+    </div>
+    <!-- Alterações do pref -->
+
+<script>
+    function revelar() {
+    document.querySelectorAll('input[value="true"]').forEach(el => {
+    el.parentElement.classList.add("correto")
+        });
+
+    document.querySelectorAll('input[value="false"]').forEach(el => {
+        if (el.checked) {
+          el.nextElementSibling.classList.add("errado")   
+        }
+   
+        })
+    }
+</script>
+
+<!-- Alterações do Pref -->
+    <div class="rodape">
+        <div class="rodape-div">
+            <div class="rodape-divsoes">
+                <p class="p-rod">
+                    Domínio Morfoclimático
+                </p>
+                <p class="t-rod">
+                    CERRADO
+                </p>
+            </div>
+            <div class="rodape-divsoes2">
+                <div class="rodape-divsoes2-5">
+                    <a href="index.html#an" class="pt-rod">Aspectos Geográficos</a>
+                    <a href="localizacao.html" class="pt-rod2">Localização</a>
+                    <a href="vegetacao.html" class="pt-rod2">Vegetação</a>
+                    <a href="relevo.html" class="pt-rod2">Relevo</a>
+                    <a href="solo.html" class="pt-rod2">Solo</a>
+                    <a href="hidrografia.html" class="pt-rod2">Hidrografia</a>
+                    <a href="clima.html" class="pt-rod2">Clima</a>
+                </div>
+            </div>
+            <div class="rodape-divsoes2">
+                <div class="rodape-divsoes2-5">
+                    <p class="pt-rod">Situação Atual</p>
+                    <a href="index.html#sa" class="pt-rod2" style="margin-top: -1.5vw;">Situação Atual</a>
+                    <a href="index.html#pa" class="pt-rod2">Problemas Ambientais</a>
+                </div>
+            </div>
+            <div class="rodape-divsoes2">
+                <div class="rodape-divsoes2-5" style="border-right: 1px solid #00000000;">
+                    <a href="index.html#qv" class="pt-rod">Questões de Vestibular</a>
+                    <a href="https://www.infoescola.com/geografia/cerrados/exercicios/" target="_blank" class="pt-rod2">Página Oficial</a>
+                    <a href="questoes.html" class="pt-rod2">Questões de Vestibular</a>
+                </div>
+            </div>
+            <div class="rodape-divsoes2">
+                <div class="rodape-divsoes2-5" style="justify-content: flex-end; border-right: 1px solid #00000000;">
+                    <a href="https://github.com/wxluiS1n" target="_blank"><img src="img/ls1n.png" class="ls1n"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+            <center>
+            <p class="p-rod" style="margin-top: -3vw; font-size: 1vw; color: #363636">
+                - Pedro H.N.A - Luís Fellipe - Gustavo Cruz - Gabriel Gutierrez - Marcos Roberto - Murilo Niêto - Ryan Alves - 01DS -
+            </p>
+            </center>
+<!-- Alterações do Pref -->
+</body>
+</html>
