@@ -174,7 +174,7 @@ a {
     font-family: centaur;
     font-weight: bolder;
     color: #f1f2f3;
-    font-size: 1vw;
+    font-size: 1.8vh;
     line-height: 1;
 }
 
@@ -322,7 +322,7 @@ a {
     font-family: centaur;
     font-weight: bold;
     color: #3c3c3c;
-    font-size: 1.2vh;
+    font-size: 2.3vh;
 }
 
 .caninde {
@@ -579,7 +579,7 @@ a {
     font-family: centaur;
     font-weight: bold;
     color: #3c3c3c;
-    font-size: 1.2vw;
+    font-size: 2.3vh;
     text-align: center;
     margin-top: -3vw;
     line-height: 0.9;
@@ -853,7 +853,7 @@ a {
     font-family: centaur;
     font-weight: bold;
     color: #5c5c5c;
-    font-size: 1.2vw;
+    font-size: 2.3vh;
     margin-top: -0vw;
 }
 
