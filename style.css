@@ -160,12 +160,14 @@ a {
     width: 3vh;
     height: 3vh;
     margin-left: 1vh;
+    transform: scale(0.8);
 }
 
 .linkimg2 {
     width: 2vh;
     height: 2vh;
     margin-left: 1vh;
+    transform: scale(0.8);
 }
 
 .linkp {
@@ -254,7 +256,7 @@ a {
     width: 100vw;
     min-height: 30vw;
     max-height: max-content;
-    margin-top: -8vh;
+    margin-top: -4vw;
 }
 
 .introdiv {
@@ -331,7 +333,14 @@ a {
     border-radius: 20px;
     border: 1px solid #b1b2b3;
     box-shadow: 1px 1px 20px #a5a6a7;
+    transition: ease 0.3s;
 }
+
+.caninde:hover {
+    transform: scale(1.005);
+    box-shadow: 1px 1px 20px #7a7a7a;
+}
+
 
 .banner2 {
     width: 100vw;
@@ -409,6 +418,8 @@ a {
     height: 4vh;
     width: 4.7vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     overflow: hidden;
     transition: ease 0.2s;
 }
@@ -453,7 +464,7 @@ a {
 .crd-img {
     width: 100%;
     height: 13.5vw;
-    border-radius: 1.5vh;
+    border-radius: 15px;
     border: 0.15vw solid #b1b2b3;
     transition: ease 0.2s;
     filter: opacity(0.95);
@@ -464,7 +475,7 @@ a {
 .crd-img-selec {
     width: 100%;
     height: 13.5vw;
-    border-radius: 1.5vh;
+    border-radius: 15px;
     border: 0.15vw solid #b1b2b3;
     transition: ease 0.2s;
     filter: opacity(0.95);
@@ -494,6 +505,12 @@ a {
     border-radius: 20px;
     border: 1px solid #b1b2b3;
     box-shadow: 1px 1px 20px #a5a6a7;
+    transition: ease 0.3s;
+}
+
+.situa-img:hover {
+    transform: scale(1.005);
+    box-shadow: 1px 1px 20px #7a7a7a;
 }
 
 .content3 {
@@ -597,8 +614,13 @@ a {
     border-radius: 20px;
     border: 1px solid #b1b2b3;
     box-shadow: 1px 1px 20px #a5a6a7;
+    transition: ease 0.3s;
 }
 
+.prob-img:hover {
+    transform: scale(1.005);
+    box-shadow: 1px 1px 20px #7a7a7a;
+}
 .introdivv2 {
     background-color: #00000000;
     width: 85%;
@@ -816,6 +838,7 @@ a {
     color: #6e6e6e;
     font-size: 1.5vw;
     margin-top: 5vw;
+    line-height: 0.8;
 }
 
 .pt-rod {
