@@ -862,3 +862,28 @@ a {
     width: 5vw;
     margin-left: 9.5vw;
 }
+
+.divhover {
+    height: 1vw;
+    width: 100%;
+    margin-top: 0vw;
+    background-color: #00000000;
+    filter: opacity(.2);
+    transition: ease 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.divhover:hover {
+    filter: opacity(1);
+}
+
+.p-font {
+    font-family: arial;
+    color: #5c5c5c;
+    font-size: 1vw;
+    margin-bottom: -1vh;
+    margin-left: 3vw;
+
+}
